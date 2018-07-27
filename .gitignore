@@ -1,0 +1,15 @@
+/target/
+.idea/
+classes/
+.project
+.settings/
+*.log
+*.log.*
+**/*.log
+**/*.log.*
+*.iml
+*.iws
+*.ipr
+.sts4-cache
+**/target/
+*.cache

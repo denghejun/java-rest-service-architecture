@@ -1,0 +1,24 @@
+spring:
+  profiles:
+    active: local
+  application:
+    name: java-rest-service-architecture
+  http:
+    multipart:
+      max-file-size: 10Mb
+      max-request-size: 10Mb
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+  Mybatis:
+    mapper-locations: classpath*:mapper/*Mapper.xml
+    confirguration:
+      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+      jdbc-type-for-null: "NULL"
+
+  authorizatioin:
+    jwt:
+      expireMinutes: 50
+      key: xxx
+
+  server:
+    context-path: /api
