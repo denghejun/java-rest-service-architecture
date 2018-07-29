@@ -1,19 +1,18 @@
-package rest.service.architecture.test.bff.app;
+package rest.service.architecture.bff.app;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-import rest.service.architecture.bff.app.UserApi;
+import rest.service.architecture.common.SpringBootTestBase;
 
 import static org.hamcrest.CoreMatchers.*;
-import static org.junit.Assert.assertThat;
+import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest
+@SpringBootTest(classes = SpringBootTestBase.class)
 public class UserApiTest {
-
     @Autowired
     UserApi userApi;
 
