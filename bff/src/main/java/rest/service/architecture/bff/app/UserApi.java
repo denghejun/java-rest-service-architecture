@@ -1,4 +1,4 @@
-package rest.service.bff.app;
+package rest.service.architecture.bff.app;
 
 import org.springframework.web.bind.annotation.*;
 import user.model.User;

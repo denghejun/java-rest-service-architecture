@@ -1,4 +1,4 @@
-package rest.service;
+package rest.service.architecture;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
