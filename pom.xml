@@ -103,7 +103,7 @@
                                 <copy todir=".git/hooks/" overwrite="true">
                                     <fileset dir="${basedir}/config/git"></fileset>
                                 </copy>
-                                <!--<chmod file="${basedir}/.git/hooks/pre-commit" perm="chmod +x"/>-->
+                                <chmod file="${basedir}/.git/hooks/pre-commit" perm="chmod +x"/>
                             </tasks>
                         </configuration>
                     </execution>
