@@ -20,7 +20,7 @@ public class UserApi {
     }
 
     @GetMapping("/{userId}")
-    public User getUser(        @PathVariable("userId") String userId) {
+    public User getUser(          @PathVariable("userId") String userId) {
         User u = new User();
 
         u.setName("you");
