@@ -1,5 +1,6 @@
 package rest.service.architecture.bff.app;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 import user.model.User;
 
@@ -9,6 +10,9 @@ import java.util.List;
 @RestController
 @RequestMapping(value = "/app/user")
 public class UserApi {
+
+    @Value("${spring.datasource.url}")
+    private String text;
 
     @PostMapping
     public List<User> addUsers(List<User> users) {
@@ -23,7 +27,7 @@ public class UserApi {
     public User getUser(@PathVariable("userId") String userId) {
         User u = new User();
 
-        u.setName("you");
+        u.setName(this.text);
         return u;
     }
 }

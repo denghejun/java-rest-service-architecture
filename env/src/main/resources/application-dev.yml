@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbclocal
+    url: jdbcdev
     username: xxx
     password: xxx
   other:
