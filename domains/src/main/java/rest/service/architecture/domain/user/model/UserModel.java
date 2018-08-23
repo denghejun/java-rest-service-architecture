@@ -1,6 +1,6 @@
-package user.model;
+package rest.service.architecture.domain.user.model;
 
-public class User {
+public class UserModel {
     private String name;
 
     public String getName() {

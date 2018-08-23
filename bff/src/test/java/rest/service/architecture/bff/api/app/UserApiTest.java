@@ -1,5 +1,6 @@
-package rest.service.architecture.bff.app;
+package rest.service.architecture.bff.api.app;
 
+import org.hamcrest.CoreMatchers;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +25,7 @@ public class UserApiTest {
     @Test
     public void should_be_true_not() {
         UserApi obj = new UserApi();
-        assertThat(userApi, is(not(obj)));
+        assertThat(userApi, is(CoreMatchers.not(obj)));
     }
 
     @Test
