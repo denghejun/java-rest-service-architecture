@@ -22,6 +22,6 @@ public class UserApiFacade {
         UserApiResponse response = new UserApiResponse();
         response.setId(request.getId());
         response.setModel(model);
-        return RestApiResponse.success(model);
+        return RestApiResponse.success(response);
     }
 }

@@ -10,7 +10,7 @@ import rest.service.architecture.bff.dto.app.UserApiRequest;
 @RequestMapping(value = "/app/user")
 public class UserApi extends RestApi<UserApiFacade> {
 
-    @GetMapping("/{userId}")
+    @GetMapping("/{id}")
     public RestApiResponse getUser(UserApiRequest request) {
         return this.facade.getAdmin(request);
     }
