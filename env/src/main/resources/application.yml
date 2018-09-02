@@ -9,6 +9,10 @@ spring:
       max-request-size: 10Mb
   datasource:
     driverClassName: com.mysql.jdbc.Driver
+    max-idle: 10
+    max-wait: 1000
+    min-idle: 5
+    initial-size: 5
   Mybatis:
     mapper-locations: classpath*:mapper/*Mapper.xml
     confirguration:

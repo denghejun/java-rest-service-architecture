@@ -2,8 +2,8 @@ package rest.service.architecture.domain.core;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-public abstract class Service<TPersistence> {
+public abstract class Service<TRepository> {
 
     @Autowired
-    protected TPersistence persistence;
+    protected TRepository repository;
 }
