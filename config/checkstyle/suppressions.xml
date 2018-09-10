@@ -9,4 +9,8 @@
     <suppress checks="[a-zA-Z0-9]*" files="Domain.java"/>
     <suppress checks="[a-zA-Z0-9]*" files="Service.java"/>
     <suppress checks="[a-zA-Z0-9]*" files="RestApi.java"/>
+    <suppress checks="[a-zA-Z0-9]*" files="Film.java"/>
+    <suppress checks="[a-zA-Z0-9]*" files="FilmMapper.java"/>
+    <suppress checks="[a-zA-Z0-9]*" files="FilmExample.java"/>
+    <suppress checks="[a-zA-Z0-9]*" files="FilmRepository.java"/>
 </suppressions>

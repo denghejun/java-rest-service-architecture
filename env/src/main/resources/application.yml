@@ -20,7 +20,7 @@ spring:
   server:
     context-path: /api
 mybatis:
-    mapper-locations: classpath*:mapper/*Mapper.xml
+    mapper-locations: classpath*:mapping/*Mapper.xml
     confirguration:
       log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
       jdbc-type-for-null: "NULL"
