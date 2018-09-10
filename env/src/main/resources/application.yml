@@ -13,16 +13,19 @@ spring:
     max-wait: 1000
     min-idle: 5
     initial-size: 5
-  Mybatis:
-    mapper-locations: classpath*:mapper/*Mapper.xml
-    confirguration:
-      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-      jdbc-type-for-null: "NULL"
-
   authorizatioin:
     jwt:
       expireMinutes: 50
       key: xxx
-
   server:
     context-path: /api
+mybatis:
+    mapper-locations: classpath*:mapper/*Mapper.xml
+    confirguration:
+      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+      jdbc-type-for-null: "NULL"
+pagehelper:
+    helperDialect: mysql
+    reasonable: false
+    supportMethodsArguments: true
+    params: count=countSql

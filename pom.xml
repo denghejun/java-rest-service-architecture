@@ -20,6 +20,7 @@
         <module>common</module>
         <module>env</module>
         <module>host</module>
+        <module>tool</module>
     </modules>
 
     <dependencies>
