@@ -69,6 +69,8 @@
                     </execution>
                 </executions>
                 <configuration>
+<!--                    <excludes>**/domain/film/model/**/*,**/domain/security/**/*</excludes>-->
+                    <includes>**/domain/film/model/**/*,**/domain/security/**/*</includes>
                     <configLocation>/config/checkstyle/checkstyle.xml</configLocation>
                     <suppressionsLocation>/config/checkstyle/suppressions.xml</suppressionsLocation>
                 </configuration>

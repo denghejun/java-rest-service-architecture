@@ -18,7 +18,7 @@ public class Film {
     }
 
     public void setLink(String link) {
-        this.link = link == null ? null : link.trim();
+        this.link = (link == null) ? null : link.trim();
     }
 
     @Override
