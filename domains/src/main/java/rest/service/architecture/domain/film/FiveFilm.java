@@ -9,8 +9,13 @@ import rest.service.architecture.domain.film.service.FilmService;
 
 @Component
 public class FiveFilm extends Domain<FilmService, FilmCaching> {
-    public Film getFilm(Integer id) {
-        if (this.caching.has(FilmCacheKeyEnum.Admin)) {
+    public Film getFilm( Integer id   ) {
+
+
+
+        if
+        (   this.caching.has(
+                FilmCacheKeyEnum.Admin)) {
             return this.caching.get(FilmCacheKeyEnum.Admin);
         } else {
             Film film = this.service.getFilm(id);
