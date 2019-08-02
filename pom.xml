@@ -71,6 +71,8 @@
                 <configuration>
 <!--                    <excludes>**/domain/film/model/**/*,**/domain/security/**/*</excludes>-->
                     <includes>**/domain/film/model/**/*,**/domain/security/**/*</includes>
+                    <includeResources>false</includeResources>
+                    <includeTestResources>false</includeTestResources>
                     <configLocation>/config/checkstyle/checkstyle.xml</configLocation>
                     <suppressionsLocation>/config/checkstyle/suppressions.xml</suppressionsLocation>
                 </configuration>
