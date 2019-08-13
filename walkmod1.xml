@@ -1,0 +1,17 @@
+<!DOCTYPE walkmod PUBLIC "-//WALKMOD//DTD" "http://www.walkmod.com/dtd/walkmod-1.1.dtd">
+<walkmod>
+    <plugins>
+        <plugin artifactId="walkmod-imports-cleaner-plugin" groupId="org.walkmod" version="2.0"/>
+        <plugin artifactId="walkmod-checkstyle-plugin" groupId="org.walkmod" version="2.0"/>
+    </plugins>
+    <chain name="sample">
+        <reader path="/Users/hjdeng/coding/projects/java-rest-service-architecture/domains"/>
+        <transformation type="rawclasspath">
+            <param name="classpath">/Users/hjdeng/coding/projects/java-rest-service-architecture/domains/target/classes</param>
+        </transformation>
+        <transformation type="walkmod:commons:import-cleaner"/>
+        <transformation type="org.walkmod:walkmod-checkstyle-plugin:EmptyStatement"/>
+        <transformation type="org.walkmod:walkmod-checkstyle-plugin:UnusedImports"/>
+        <writer path="/Users/hjdeng/coding/projects/java-rest-service-architecture/domains"/>
+    </chain>
+</walkmod>
