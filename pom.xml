@@ -87,7 +87,7 @@
                 </executions>
                 <configuration>
 <!--                    <excludes>**/domain/film/model/**/*,**/domain/security/**/*</excludes>-->
-                    <includes>**/domain/film/model/**/*</includes>
+<!--                    <includes>**/domain/film/model/**/*</includes>-->
                     <includeResources>false</includeResources>
                     <includeTestResources>false</includeTestResources>
                     <configLocation>/config/checkstyle/checkstyle.xml</configLocation>
